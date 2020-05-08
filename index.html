@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ajax-movieSearch</title>
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <form class="search searchContainer">
+        <h1 class="search__title">Movie Database</h1>
+        <div class="search__bar">
+          <input
+            type="text"
+            class="search__bar--input"
+            placeholder="Type a movie's title"
+            autofocus;
+          />
+          <button class="search__bar--button">SEARCH A MOVIE</button>
+        </div>
+        <div class="search__result"></div>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="src/ajax.js"></script>
+  </body>
+</html>

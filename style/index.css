@@ -1,0 +1,111 @@
+body {
+  background-color: #1a1919;
+  font-family: sans-serif;
+  color: #ffffff;
+  margin: 0;
+}
+
+screen {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search {
+  width: 70%;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.search__title {
+  font-size: 3rem;
+}
+
+.search__bar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.search__bar--input {
+  width: 70%;
+  height: 42px;
+  background-color: #d3d3d3;
+  font-size: 1rem;
+}
+
+.search__bar--input::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #778899;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+.search__bar--input:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #778899;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+.search__bar--input::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #778899;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+.search__bar--input::placeholder {
+  font-size: 1rem;
+  color: #778899;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+.search__bar--input:focus {
+  background: #ffffff;
+}
+
+.search__bar--button {
+  width: 25%;
+  height: 42px;
+  border-radius: 6px;
+  background-color: #ffa500;
+  font-size: 1rem;
+  font-style: bold;
+  letter-spacing: .1rem;
+  padding: .5rem 1rem;
+}
+
+.search__bar--button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #444444;
+}
+
+.search__result {
+  min-height: 580px;
+  background-color: #444444;
+}
+/*# sourceMappingURL=index.css.map */
