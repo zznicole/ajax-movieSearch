@@ -1,11 +1,11 @@
 body {
-  background-color: #1a1919;
+  display: border-box;
   font-family: sans-serif;
   color: #ffffff;
-  margin: 0;
 }
 
-screen {
+.screen {
+  background-image: url("../img/cinemaSmall.jpeg");
   width: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -21,7 +21,7 @@ screen {
 
 .search {
   width: 70%;
-  min-height: 60vh;
+  min-height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,13 +29,17 @@ screen {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .search__title {
-  font-size: 3rem;
+  font-size: 4rem;
+  letter-spacing: .3rem;
+  margin: 0 auto;
 }
 
 .search__bar {
@@ -46,6 +50,7 @@ screen {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
 }
 
 .search__bar--input {
@@ -105,7 +110,7 @@ screen {
 }
 
 .search__result {
-  min-height: 580px;
-  background-color: #444444;
+  color: #ffa500;
+  min-height: auto;
 }
 /*# sourceMappingURL=index.css.map */

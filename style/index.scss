@@ -1,11 +1,12 @@
 body {
     display: border-box;
-    background-color: #1a1919;
+    // background-color: #1a1919;
     font-family: sans-serif;
     color: #ffffff;
 }
 
 .screen {
+    background-image: url('../img/cinemaSmall.jpeg');
     width: 100%;
     min-height: 100vh;
     display: flex;
