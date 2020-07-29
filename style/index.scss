@@ -1,8 +1,11 @@
+$orange: #ffa500;
+
 body {
     display: border-box;
-    // background-color: #1a1919;
     font-family: sans-serif;
-    color: #ffffff;
+  
+    margin: 0;
+    padding: 0;
 }
 
 .screen {
@@ -23,22 +26,23 @@ body {
     align-items: center;
     
     &__title {
-        font-size: 4rem;
+        font-size: 5rem;
         letter-spacing:  .3rem;
-        margin: 0 auto;
+        margin: 1em auto;
     }
 
     &__bar {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 0 auto;
 
         &--input {
             width: 70%;
             height: 42px;
             background-color: #d3d3d3;
-            font-size: 1rem;
+            font-size: 1.5rem;
+            padding: 0 1em;
         }
 
         &--input::placeholder {
@@ -53,10 +57,10 @@ body {
         }
 
         &--button {
-            width: 25%;
+            width: 20%;
             height: 42px;
             border-radius: 6px;
-            background-color: #ffa500;
+            background-color: $orange;
             font-size: 1rem;
             font-style: bold;
             letter-spacing: .1rem;
@@ -70,8 +74,9 @@ body {
     }
 
     &__result {
-        color: #ffa500;
+        color: $orange;
         min-height: auto;
+        
         
     }
 }
