@@ -7,15 +7,15 @@ $(".search__bar--button").on("click", function () {
       let result = $("#search__result");
       result.empty(); 
       if (response.Response === "False"){
-        alert(response.Error);
+        result.append(`<p>This movie not found. Please try another movie.</p>`);
       } else {
         for (let key in response) {
         if (key === "Poster") {
           result.append(`<div><img src="${response[key]}"></div>`);
         }
         if (key === "Title" || key === "Actors" || key === "Awards" || key === "Runtime"
-        || key === "Year" || key === "imdbRating") {
-          result.append(`<h3>${key} ${response[key]}</h3>`);
+        || key === "Year") {
+          result.append(`<h3>${key} : ${response[key]}</h3>`);
         }
       }
     }     
@@ -23,5 +23,3 @@ $(".search__bar--button").on("click", function () {
 });
      
           
-
- 

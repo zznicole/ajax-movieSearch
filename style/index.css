@@ -1,7 +1,9 @@
 body {
   display: border-box;
-  font-family: sans-serif;
   color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .screen {
@@ -29,8 +31,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -112,5 +115,12 @@ body {
 .search__result {
   color: #ffa500;
   min-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=index.css.map */
